@@ -1,0 +1,13 @@
+# Training stack (Python 3.11/3.12).
+# scikit-learn is pinned: pickled artifacts must load under scikit-learn 1.9.0
+# in the evaluation image (checked by tools/check_image_compat.py).
+scikit-learn==1.5.2
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.17.1
+joblib==1.5.3
+pytest==9.1.1
+
+# torch and transformers are needed only for e5 encoding.
+# torch>=2.6
+# transformers>=4.51
